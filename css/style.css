@@ -6,6 +6,10 @@ a {
   text-decoration: unset;
   color: gray;
 }
+.fixed {
+  position: fixed;
+  z-index: 9;
+}
 .float-L {
   float: left;
 }
@@ -29,8 +33,9 @@ a {
 
 /* 上方 logo 搜尋區 top */
 #top {
+  width: 100%;
   height: 56px;
-  /* background-color: antiquewhite; */
+  background-color: white;
   padding: 0 1rem;
 }
 /* #top div {
@@ -105,6 +110,7 @@ a {
 #navbar {
   width: 15%;
   height: calc(100vh - 56px);
+  margin-top: 56px;
   overflow: scroll;
 }
 
@@ -128,11 +134,26 @@ a {
 
 #navbar a {
   display: block;
-  padding: 10px 5px;
+  line-height: 30px;
+  padding: 10px 0;
   box-sizing: border-box;
+}
+#navbar a:hover {
+  background-color: #ebebeb66;
+}
+
+#navbar i {
+  margin: auto 25px;
 }
 #navbar .dash {
   border-bottom: 1px lightgrey solid;
+}
+
+#guide a {
+  display: inline-block;
+  font-size: small;
+  padding: 2px;
+  line-height: 1;
 }
 
 /* 網頁內容區 content */
