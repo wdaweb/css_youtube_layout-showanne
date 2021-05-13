@@ -57,6 +57,7 @@ a {
 #topM {
   width: 70%;
   margin: auto;
+  text-align: center;
   /* background-color: burlywood; */
   padding: 1rem 5rem;
   box-sizing: border-box;
@@ -64,8 +65,9 @@ a {
 
 #topM input {
   vertical-align: middle;
-  height: 24px;
-  border: solid 1px gray;
+  height: 30px;
+  padding: 1px 10px;
+  border: solid 1px #b6b6b6;
   border-radius: 2px 0 0 2px;
 }
 
@@ -73,19 +75,20 @@ a {
   vertical-align: middle;
   padding: 0 0.8rem;
   width: 65px;
-  height: 24px;
-  background-color: gainsboro;
-  border: solid 1px gray;
+  height: 30px;
+  background-color: #ebebeb;
+  border: solid 1px #b6b6b6;
   border-radius: 0 2px 2px 0;
-  color: gray;
+  color: #999999;
 }
 #topM i {
   padding: 0;
+  font-size: 1rem;
 }
 
 #topM .fa-microphone {
   vertical-align: middle;
-  font-size: 24px;
+  /* font-size: 24px; */
   padding: 0 1rem;
   box-sizing: border-box;
   color: black;
@@ -104,6 +107,19 @@ a {
   padding: 0.5rem 1rem;
   /* line-height: 56px; */
   vertical-align: middle;
+}
+
+.login {
+  color: #3142dd;
+  border: solid 1px #3142dd;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  padding: 7px;
+}
+.login i {
+  font-size: 1.3rem;
+  padding: 0;
+  margin-right: 7px;
 }
 
 /* 左側導覽列 navbar */
@@ -143,12 +159,31 @@ a {
 }
 
 #navbar i {
-  margin: auto 25px;
+  margin: auto 30px;
 }
 #navbar .dash {
   border-bottom: 1px lightgrey solid;
 }
 
+#navbar .login {
+  display: inline-block;
+  margin: 15px 30px;
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+#navbar .login i {
+  margin: auto 7px auto 0px;
+}
+
+#navbar .login:hover {
+  background-color: #ffffff;
+}
+
+#navbar .dash p {
+  font-size: 0.9rem;
+  padding: 5px 5px 5px 30px;
+  line-height: 19px;
+}
 #guide a {
   display: inline-block;
   font-size: small;
