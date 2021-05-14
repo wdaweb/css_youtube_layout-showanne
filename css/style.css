@@ -194,7 +194,7 @@ a {
 /* 網頁內容區 content */
 #content {
   width: 85%;
-  padding: 0 8px;
+  padding: 56px 8px 0 8px;
   box-sizing: border-box;
 }
 
@@ -266,4 +266,8 @@ a {
   /* 若為 webkit 以外的瀏覽器，需再加入這2行
   line-height: X; // X 填入行高 px 值
   height: X * N; // 限定高度為 X * N 的 px 值 */
+}
+#content #ad {
+  background-color: black;
+  height: 25vh;
 }
