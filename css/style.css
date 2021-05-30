@@ -28,7 +28,7 @@ a {
   /* 處理幽靈空白(inline) 將父層字體大小設為 font-size: 0; */
 }
 .dash {
-  border-bottom: 4px lightgrey solid;
+  border-bottom: 4px #dddddd solid;
 }
 
 /* 上方 logo 搜尋區 top */
@@ -108,6 +108,11 @@ a {
   /* line-height: 56px; */
   vertical-align: middle;
 }
+#topL span {
+  font-size: 0.5rem;
+  position: relative;
+  top: -10px;
+}
 
 .login {
   color: #3142dd;
@@ -183,6 +188,9 @@ a {
   font-size: 0.9rem;
   padding: 5px 5px 5px 30px;
   line-height: 19px;
+}
+#guide {
+  padding: 24px 24px 24px 24px;
 }
 #guide a {
   display: inline-block;
@@ -267,7 +275,90 @@ a {
   line-height: X; // X 填入行高 px 值
   height: X * N; // 限定高度為 X * N 的 px 值 */
 }
+
+/* 廣告 ad */
 #content #ad {
   background-color: black;
-  height: 25vh;
+  height: 210px;
+  padding: 2rem;
+  position: relative;
+}
+#content #ad img {
+  width: 380px;
+  margin-bottom: 0.7rem;
+}
+#content #ad div {
+  margin-bottom: 4rem;
+  width: 500px;
+  color: white;
+  font-size: 1.9rem;
+}
+
+#content #ad .buy {
+  border: solid 2px white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+#content #ad .exit {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 2rem;
+  border: solid 1px black;
+  border-radius: unset;
+  box-sizing: border-box;
+  padding: 0.2px;
+  align-items: center;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
+/* COVID */
+#content #COVID {
+  height: 210px;
+  padding: 2rem 0;
+  position: relative;
+}
+#content #COVID img {
+  width: 180px;
+  margin-bottom: 0.7rem;
+}
+#content #COVID div {
+  margin-bottom: 4rem;
+  width: 500px;
+  color: white;
+  font-size: 1.9rem;
+}
+
+#content #COVID .buy {
+  border: solid 2px white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+#content #COVID .exit {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 2rem;
+  color: #999999;
+  background-color: transparent;
+  border: none;
+  border-radius: unset;
+  box-sizing: border-box;
+  padding: 0.2px;
+  align-items: center;
+  position: absolute;
+  right: 13px;
+  top: 13px;
 }
