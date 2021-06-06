@@ -136,7 +136,7 @@ a {
   width: 242px;
   height: calc(100vh - 56px);
   margin-top: 56px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 /* navbar 滾動條 */
@@ -199,8 +199,9 @@ a {
   font-weight: bold;
 }
 #guide {
-  padding: 24px 24px 0 24px;
-  /* 暫時把 padding-bottom 24px 拿掉，因為 #navbar 最後有奇怪的 padding */
+  padding: 24px;
+  /* 暫時把 padding-bottom 24px 拿掉，因為 #navbar 最後有奇怪的 padding
+   把 #navbar overflow-y: scroll; 後解決 */
 }
 #guide a {
   display: inline-block;
